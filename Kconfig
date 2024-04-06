@@ -15,6 +15,8 @@ source "fs/Kconfig.binfmt"
 
 source "mm/Kconfig"
 
+source "memory/Kconfig"
+
 source "net/Kconfig"
 
 source "drivers/Kconfig"

@@ -981,6 +981,9 @@ asmlinkage long sys_pciconfig_write(unsigned long bus, unsigned long dfn,
 				void __user *buf);
 asmlinkage long sys_pciconfig_iobase(long which, unsigned long bus, unsigned long devfn);
 
+asmlinkage long sys_vminfo(unsigned long address, unsigned long addr_size, pid_t pid, struct vminfo_struct __user *vminfo);
+
+
 /* powerpc */
 asmlinkage long sys_spu_run(int fd, __u32 __user *unpc,
 				 __u32 __user *ustatus);

@@ -1,0 +1,10 @@
+menu "Hack the process address space"
+
+config VMINFO_SYSCALL
+       prompt "Hack the process address space"
+       def_bool y
+       help
+         Walk the page table starting from an address in the
+	 current address space or another one
+
+endmenu
